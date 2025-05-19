@@ -1,5 +1,21 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Ayden's Playground",
+  description: "A collection of free tools and utilities built by Ayden",
+  keywords: "tools, utilities, calculator, timesheet, productivity",
+  openGraph: {
+    title: "Ayden's Playground",
+    description: "A collection of free tools and utilities built by Ayden",
+    type: "website",
+    url: "https://playground.aydensweb.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start bg-white text-gray-800">
