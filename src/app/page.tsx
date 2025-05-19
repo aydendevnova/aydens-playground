@@ -2,32 +2,30 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+    <main className="flex min-h-screen flex-col items-center justify-start bg-white text-gray-800">
+      <div className="flex flex-col items-center justify-center gap-8 px-4 py-16">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+          Ayden's <span className="text-blue-600">Playground</span>
         </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+        <p>Tools are made in my free time and are free of use. </p>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
+            className="flex max-w-xs flex-col gap-3 rounded-lg border border-gray-200 p-4 shadow-sm transition-all hover:shadow-md"
+            href="/timesheet"
           >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
+            <h3 className="text-xl font-semibold">Time Sheet Calculator</h3>
+            <div className="text-base text-gray-600">
+              Calculate your work hours and earnings easily with our time sheet
+              tool.
             </div>
           </Link>
           <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
+            className="flex max-w-xs flex-col gap-3 rounded-lg border border-gray-200 p-4 shadow-sm transition-all hover:shadow-md"
+            href="/coming-soon"
           >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
+            <h3 className="text-xl font-semibold">More Tools Coming Soon</h3>
+            <div className="text-base text-gray-600">
+              Stay tuned for additional productivity tools and calculators.
             </div>
           </Link>
         </div>
